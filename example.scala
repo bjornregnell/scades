@@ -1,5 +1,6 @@
 import scades._
 
+/** Simulation of an MM1 queuing system. */
 class MM1(val lambda: Double, val mu: Double) {
   def nextArrivalTime(from: Time) = from + Time(RNG.negExp(lambda))
   def nextServiceTime(from: Time) = from + Time(RNG.negExp(mu))
