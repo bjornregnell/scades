@@ -5,7 +5,7 @@ object RNG {
   /** Underlying JDK thread-safe random number generator. */
   val jrand = java.util.concurrent.ThreadLocalRandom.current
 
-  /** RNG with exponetial distribution. */
+  /** RNG with exponential distribution. */
   def negExp(mean: Double)        = math.log(1 - jrand.nextDouble)/(-1 / mean)
 
   /** RNG with rectangular distribution. */
