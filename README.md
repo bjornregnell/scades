@@ -1,2 +1,2 @@
 # scades
-Descrete Event Simulation library in Scala
+A Scala library for Descrete Event Simulation.
